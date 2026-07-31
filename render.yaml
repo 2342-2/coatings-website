@@ -8,7 +8,6 @@ services:
   - type: web
     name: maridadi-api
     runtime: node
-    plan: free
     rootDir: server
     buildCommand: ""
     startCommand: node server.js
@@ -21,7 +20,6 @@ services:
   - type: web
     name: maridadi-client
     runtime: static
-    plan: free
     rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: dist
